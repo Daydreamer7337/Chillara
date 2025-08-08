@@ -1,5 +1,6 @@
 package com.uselessprojects.chillara
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         profile_btn.setOnClickListener()
         {
-
+            startActivity(Intent(this, ViewProfile::class.java))
         }
     }
 }
