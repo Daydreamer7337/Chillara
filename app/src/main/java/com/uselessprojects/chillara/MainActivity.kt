@@ -1,12 +1,16 @@
 package com.uselessprojects.chillara
 
+import android.Manifest
+import android.bluetooth.BluetoothAdapter
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.bluetooth.BluetoothManager
+import android.content.pm.PackageManager
+import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,5 +26,20 @@ class MainActivity : AppCompatActivity() {
         {
             startActivity(Intent(this, ViewProfile::class.java))
         }
+
+        if((!hasPermission(Manifest.permission.BLUETOOTH_SCAN)) && (!hasPermission(Manifest.permission.BLUETOOTH_CONNECT)) && (!hasPermission(Manifest.permission.BLUETOOTH_ADVERTISE)))
+        {
+            startActivity(Intent(this, EnablePermissions::class.java))
+        }
+    }
+
+    fun Context.hasPermission(permissionType: String): Boolean {
+        return ContextCompat.checkSelfPermission(this, permissionType) ==
+                PackageManager.PERMISSION_GRANTED
+    }
+
+    private val bluetoothAdapter: BluetoothAdapter by lazy {
+        val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
+        bluetoothManager.adapter
     }
 }
