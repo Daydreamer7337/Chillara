@@ -3,4 +3,5 @@
     <string name="home_text">"What do you wish to do?"</string>
     <string name="request_permission">"This app uses Bluetooth to connect to nearby users. You may also enable/disable the permissions in App Info/ Permissions"</string>
     <string name="permission_denied_permanently">"Permission denied. Go to app settings and enable 'Nearby Devices' permission manually."</string>
+    <string name="enable_bt_prompt">Bluetooth must be enabled for app to function.</string>
 </resources>

@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         {
             startActivity(Intent(this, EnablePermissions::class.java))
         }
+        else if(!bluetoothAdapter.isEnabled)
+        {
+            startActivity(Intent(this, EnableBt::class.java))
+        }
     }
 
     fun Context.hasPermission(permissionType: String): Boolean {
