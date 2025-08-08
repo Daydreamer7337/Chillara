@@ -1,6 +1,7 @@
 package com.uselessprojects.chillara
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        val profile_btn: Button = findViewById(R.id.view_profile_btn)
+        val shareST_page_btn: Button = findViewById(R.id.shareST_page_btn)
+        val scanST_page_btn: Button = findViewById(R.id.scanST_page_btn)
     }
 }
