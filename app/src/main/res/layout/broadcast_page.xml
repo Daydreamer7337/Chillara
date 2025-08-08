@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleYellow"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/advertise_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Amount to share:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textDark"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/sharing_amount_et"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textDark"
+                android:textSize="15sp"
+                android:inputType="number"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/advertise_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="advertise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

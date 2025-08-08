@@ -25,6 +25,8 @@
         <activity android:name=".EditProfile"/>
         <activity android:name=".EnablePermissions"/>
         <activity android:name=".EnableBt"/>
+        <activity android:name=".BroadcastBLE"/>
+        <activity android:name=".ActiveBroadcast"/>
     </application>
 
     <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>

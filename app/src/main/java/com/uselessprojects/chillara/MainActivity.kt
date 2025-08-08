@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
         {
             startActivity(Intent(this, EnableBt::class.java))
         }
+        shareST_page_btn.setOnClickListener()
+        {
+            startActivity(Intent(this, BroadcastBLE::class.java))
+        }
     }
 
     fun Context.hasPermission(permissionType: String): Boolean {
@@ -42,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 PackageManager.PERMISSION_GRANTED
     }
 
-    private val bluetoothAdapter: BluetoothAdapter by lazy {
+    private val bluetoothAdapter: BluetoothAdapter by lazy{
         val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
         bluetoothManager.adapter
     }
