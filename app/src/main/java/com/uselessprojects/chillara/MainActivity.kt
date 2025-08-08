@@ -39,6 +39,10 @@ class MainActivity : AppCompatActivity() {
         {
             startActivity(Intent(this, BroadcastBLE::class.java))
         }
+        scanST_page_btn.setOnClickListener()
+        {
+            startActivity(Intent(this, BleScanner::class.java))
+        }
     }
 
     fun Context.hasPermission(permissionType: String): Boolean {

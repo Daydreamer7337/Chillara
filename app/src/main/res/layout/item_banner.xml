@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:  "
+        android:textSize="18sp"
+        android:textColor="@color/textDark"/>
+
+    <TextView
+        android:id="@+id/amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:  "
+        android:textColor="@color/textDark"/>
+    <Button
+        android:id="@+id/accept_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:backgroundTint="@color/lightBlue"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightTeal" />
+</LinearLayout>
