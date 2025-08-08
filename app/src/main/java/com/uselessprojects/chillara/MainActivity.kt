@@ -16,5 +16,10 @@ class MainActivity : AppCompatActivity() {
         val profile_btn: Button = findViewById(R.id.view_profile_btn)
         val shareST_page_btn: Button = findViewById(R.id.shareST_page_btn)
         val scanST_page_btn: Button = findViewById(R.id.scanST_page_btn)
+
+        profile_btn.setOnClickListener()
+        {
+
+        }
     }
 }
