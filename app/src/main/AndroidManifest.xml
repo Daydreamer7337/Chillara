@@ -28,6 +28,7 @@
         <activity android:name=".BroadcastBLE"/>
         <activity android:name=".ActiveBroadcast"/>
         <activity android:name=".BleScanner"/>
+        <activity android:name=".ConnectedServer"/>
     </application>
 
     <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>

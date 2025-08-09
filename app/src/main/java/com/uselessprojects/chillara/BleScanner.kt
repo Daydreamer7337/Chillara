@@ -82,7 +82,10 @@ class BleScanner: AppCompatActivity()
                     data.add(resultItem)
                     val adapter = resultAdapter(data)
                     {
-//                        
+                        val intent = Intent(this@BleScanner, ConnectedServer::class.java)
+                        intent.putExtra("bt_device",result.device)
+                        intent.putExtra("sender_name",name)
+                        startActivity(intent)
                     }
                     recyclerview.adapter = adapter
                     previous_find = name
