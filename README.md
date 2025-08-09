@@ -63,7 +63,7 @@ https://drive.google.com/file/d/1v8cy5BSkxA-Rg1imbGLJn5bLPUhery89/view?usp=drive
 
 ## Team Contributions
 - Abraham Poulose: Front End
-- Nikhil Biby: Backed
+- Nikhil Biby: Backend
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
