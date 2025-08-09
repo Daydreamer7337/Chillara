@@ -30,13 +30,13 @@ For Software:
 - Android Studio
 
 ### Implementation
-Install the apk and thats it.
+Made in Kotlin. With Android Studio
 
 # Installation
 Download the apk, install and your ready to go!!
 
 # Run
-Open the app, Enable necessary permissions, settup your profile and use it for sharing/joining.
+Open the app, Enable necessary permissions, setup your profile and use it for sharing/joining.
 
 ### Project Documentation
 The app opens int its home screen and immediately prompts you to enable necessary Permiisiions. Once you have the permissions, you can start navigating through the app. It enables you to set up your profile with your name, UPI ID and your department. Next in the home screen, we have options to share your ST and join someone sharing. 
